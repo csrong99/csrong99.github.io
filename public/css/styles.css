@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 /*
 ! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
@@ -441,14 +441,14 @@ body{
 }
 
 @font-face {
-  font-family: 'icomoon';
+  font-family: "icomoon";
 
-  src:  url('/assets/fonts/icomoon.eot');
+  src: url("/assets/fonts/icomoon.eot");
 
-  src:  url('/assets/fonts/icomoon.eot') format('embedded-opentype'),
-            url('/assets/fonts/icomoon.ttf') format('truetype'),
-            url('/assets/fonts/icomoon.woff') format('woff'),
-            url('/assets/fonts/icomoon.svg') format('svg');
+  src: url("/assets/fonts/icomoon.eot") format("embedded-opentype"),
+			url("/assets/fonts/icomoon.ttf") format("truetype"),
+			url("/assets/fonts/icomoon.woff") format("woff"),
+			url("/assets/fonts/icomoon.svg") format("svg");
 
   font-weight: normal;
 
@@ -1244,10 +1244,6 @@ body{
   text-align: center;
 }
 
-.text-right{
-  text-align: right;
-}
-
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1469,10 +1465,11 @@ body{
   --scrollbar-thumb: #d1d5db !important;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -1549,7 +1546,7 @@ body{
 }
 
 .tagcloud {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 650;
   /* margin-left: 30%; */
@@ -1766,6 +1763,14 @@ body{
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.timeline__left{
+  flex-direction: row-reverse;
+}
+
+.timeline__left .timeline__data, .timeline__left .timeline__data{
+  text-align: right;
+}
+
 /*================ PROJECTS =====================*/
 
 .featured__project{
@@ -1867,7 +1872,7 @@ body{
     padding: 0px;
   }
 
-  .featured__project:nth-of-type(2n+1) .project-content {
+  .featured__project:nth-of-type(2n + 1) .project-content {
     grid-column: 7 / -1;
     text-align: right;
   }
@@ -1918,15 +1923,15 @@ body{
     background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   }
 
-  .featured__project:nth-of-type(2n+1) .project-image {
+  .featured__project:nth-of-type(2n + 1) .project-image {
     grid-column: 1 / 8;
   }
 
-  .featured__project:nth-of-type(2n+1) .project-tech-list{
+  .featured__project:nth-of-type(2n + 1) .project-tech-list{
     justify-content: flex-end;
   }
 
-  .featured__project:nth-of-type(2n+1) .project-tech-list li{
+  .featured__project:nth-of-type(2n + 1) .project-tech-list li{
     margin-bottom: 0.25rem;
     margin-left: 1.25rem;
     margin-right: 0px;
@@ -2035,7 +2040,7 @@ body{
 }
 
 .circle,
-  .circle-border {
+.circle-border {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -2139,7 +2144,7 @@ body{
 }
 
 .success::before,
-  .success::after {
+.success::after {
   content: "";
   display: block;
   height: 4px;
