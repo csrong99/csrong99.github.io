@@ -66,6 +66,7 @@ function scrollActive() {
         // console.log('sectionId = ' + sectionId);
         // console.log('sectionHeight = ' + sectionHeight);
         // console.log('sectionTop = ' + sectionTop);
+        // console.log('scrollY = ' + scrollY);
 
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -347,5 +348,5 @@ ScrollReveal().reveal('#about-me .a_sr', { interval: 200 });
 ScrollReveal().reveal('#skills .a_sr', { interval: 200 });
 ScrollReveal().reveal('#projects .a_sr', { interval: 200 });
 ScrollReveal().reveal('#qualifications .a_sr', { interval: 200 });
-ScrollReveal().reveal('#contact-me .a_sr', { interval: 200 });
+ScrollReveal().reveal('#contact-me .a_sr, #gpg-key', { interval: 200 });
 
